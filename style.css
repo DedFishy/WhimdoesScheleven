@@ -5,12 +5,18 @@ body, html, #desktop {
     padding: 0;
     color: white;
     font-family: sans-serif;
+    user-select: none;
+}
+
+.invert {
+    filter:invert();
 }
 
 #desktop {
     background-image: url("assets/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 #taskbar {
