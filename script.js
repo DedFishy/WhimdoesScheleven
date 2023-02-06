@@ -35,6 +35,6 @@ setInterval(function(){
     var year = d.getFullYear();
 
     time.innerHTML = hours + ":" + minutes + " " + ampm;
-    date.innerHTML = "month" + "/" + day + "/" + "year";
+    date.innerHTML = month + "/" + day + "/" + year;
 },
 1000);
