@@ -19,6 +19,28 @@ body, html, #desktop {
     background-position: center;
 }
 
+#startmenu {
+    background-color: rgba(50, 50, 50, 0.6);
+    backdrop-filter: blur(40px);
+    z-index: 2;
+    width: 50%;
+    height: 80%;
+    bottom: 48px;
+    position: fixed;
+    border-radius: 6px 6px 0 0;
+    transition: 0.2s;
+    display: flex;
+    pointer-events: none;
+    opacity: 0;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+#startmenu.startmenu-visible {
+    opacity: 1;
+    pointer-events: all;
+    display: flex;
+}
+
 #taskbar {
     bottom: 0;
     left: 0;
@@ -27,7 +49,7 @@ body, html, #desktop {
     background-color: rgba(50, 50, 50, 0.6);
     backdrop-filter: blur(40px);
     position: fixed;
-    z-index: 2;
+    z-index: 3;
 
     display: flex;
 }
@@ -110,10 +132,6 @@ body, html, #desktop {
     margin-right: auto;
 }
 
-#search:active img {
-    height: 60%;
-}
-
 #search-text {
     font-size: 12px;
     margin-left: 5px;
@@ -141,7 +159,7 @@ body, html, #desktop {
 
     border-top: 1px solid transparent;
 
-    transition: 0.1s;
+    transition: 0.2s;
 }
 
 #clock:hover {
