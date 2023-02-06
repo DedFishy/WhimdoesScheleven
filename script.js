@@ -21,20 +21,20 @@ document.body.onclick = function(event) {
 }
 
 setInterval(function(){
-    var date = new Date();
+    var d = new Date();
 
-    var hours = date.getHours();
+    var hours = d.getHours();
 
     var ampm = hours > 12 ? "PM" : "AM";
     if (hours > 12) hours -= 12;
 
-    var minutes = date.getMinutes();
+    var minutes = d.getMinutes();
 
-    var month = date.getMonth()+1;
-    var day = date.getDate();
-    var year = date.getFullYear();
+    var month = d.getMonth()+1;
+    var day = d.getDate();
+    var year = d.getFullYear();
 
     time.innerHTML = hours + ":" + minutes + " " + ampm;
-    date.innerHTML = "E";
+    date.innerHTML = "month + "/" + day + "/" + year";
 },
 1000);
