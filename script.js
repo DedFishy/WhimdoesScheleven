@@ -10,6 +10,7 @@ startButton.onclick = function(event) {
 }
 
 document.body.onclick = function(event) {
+    alert(event.target.id);
     if (event.target.id != "startmenu") {
     startMenu.classList.remove("startmenu-visible");
     }
