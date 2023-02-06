@@ -13,8 +13,8 @@ startButton.onclick = function(event) {
 }
 
 document.body.onclick = function(event) {
-    alert(event.target.id);
     if (event.target.id != "startmenu" && event.target.id != "start") {
+        alert(event.target.id);
     startMenu.classList.remove("startmenu-visible");
     }
 }
