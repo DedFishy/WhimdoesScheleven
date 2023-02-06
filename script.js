@@ -13,7 +13,7 @@ startButton.onclick = function(event) {
 }
 
 document.body.onclick = function(event) {
-    if (event.target.id != "startmenu" && event.target.id != "start") {
+    if (!["start", "startmenu", "start-wrapper"].contains(event.target.id)) {
         alert(event.target.id);
     startMenu.classList.remove("startmenu-visible");
     }
