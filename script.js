@@ -9,8 +9,7 @@ startButton.onclick = function(event) {
     else {startMenu.classList.remove("startmenu-visible");}
 }
 
-document.getElementById("desktop").onclick = function(event) {
-    alert("E: " + event.target.id);
+document.body.onclick = function(event) {
     if (event.target.id != "startmenu") {
     startMenu.classList.remove("startmenu-visible");
     }
