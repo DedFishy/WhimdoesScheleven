@@ -29,6 +29,11 @@ setInterval(function(){
 
     var minutes = date.getMinutes();
 
+    var month = date.getMonth()+1;
+    var day = date.getDate();
+    var year = date.getFullYear();
+
     time.innerHTML = hours + ":" + minutes + " " + ampm;
+    date.innerHTML = month + "/" + day + "/" + year;
 },
 1000);
