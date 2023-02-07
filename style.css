@@ -19,6 +19,27 @@ body, html, #desktop {
     background-position: center;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(40px);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
 #startmenu {
     background-color: rgba(50, 50, 50, 0.6);
     backdrop-filter: blur(40px);
@@ -33,12 +54,40 @@ body, html, #desktop {
     pointer-events: none;
     opacity: 0;
     box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.6);
+    flex-direction: column;
+    padding: 10px;
 }
-
 #startmenu.startmenu-visible {
     opacity: 1;
     pointer-events: all;
     display: flex;
+}
+#starttitle {
+    width: 100%;
+    font-size: 3em;
+}
+#startprogramlist {
+    flex-grow: 1;
+    width: 100%;
+    background-color: rgba(50, 50, 50, 0.2);
+    backdrop-filter: blur(500px);
+    border-radius: 4px;
+    box-shadow: 0 0 2px 2px rgb(50 50 50);
+    margin-top: 4px;
+    overflow-y: scroll;
+}
+#startpowermenu {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    padding-top: 8px;
+}
+#startpoweroff {
+    background-color: rgba(50, 50, 50, 0.2);
+    backdrop-filter: blur(500px);
+    box-shadow: 0 0 2px 2px rgb(50 50 50);
+    padding: 4px;
+    border-radius: 6px;
 }
 
 #taskbar {
