@@ -6,6 +6,7 @@ body, html, #desktop {
     color: white;
     font-family: sans-serif;
     user-select: none;
+    overflow: hidden;
 }
 
 .invert {
@@ -40,6 +41,23 @@ body, html, #desktop {
     background: #555;
   }
 
+#overlay {
+    position: sticky;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    display: none;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #startmenu {
     background-color: rgba(50, 50, 50, 0.6);
     backdrop-filter: blur(40px);
@@ -70,11 +88,12 @@ body, html, #desktop {
     flex-grow: 1;
     width: 100%;
     background-color: rgba(50, 50, 50, 0.2);
-    backdrop-filter: blur(500px);
     border-radius: 4px;
     box-shadow: 0 0 2px 2px rgb(50 50 50);
     margin-top: 4px;
     overflow-y: scroll;
+    transition: 0.2s;
+    opacity: 1;
 }
 #startpowermenu {
     width: max-content;
@@ -84,10 +103,16 @@ body, html, #desktop {
 }
 #startpoweroff {
     background-color: rgba(50, 50, 50, 0.2);
-    backdrop-filter: blur(500px);
     box-shadow: 0 0 2px 2px rgb(50 50 50);
     padding: 4px;
     border-radius: 6px;
+    transition: 0.2s;
+}
+#startpoweroff:hover {
+    background-color: rgba(50, 50, 50, 0.8);
+}
+#startpoweroff:active {
+    background-color: rgba(15, 15, 15, 0.8);
 }
 
 #taskbar {
@@ -140,6 +165,25 @@ body, html, #desktop {
     filter: brightness(80.5%);
 }
 
+#startsearch {
+    width: 100%;
+    border-bottom: 2px solid rgba(50, 50, 50);
+    height: 40px;
+}
+#startsearch input {
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 2px;
+    box-shadow: 0 0 2px 2px white;
+    margin: 8px;
+    height: 60%;
+    outline: none;
+    transition: 0.2s;
+    background: none;
+    color: white;
+}
+
+/*
 #search {
     padding-left: auto;
     padding-right: auto;
@@ -185,6 +229,7 @@ body, html, #desktop {
     font-size: 12px;
     margin-left: 5px;
 }
+*/
 
 #taskbar-apps {
     flex-grow: 1;

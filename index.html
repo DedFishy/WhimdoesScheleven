@@ -5,12 +5,15 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div id="overlay"><h1 id=""overlay-text>It's now safe to close this tab.</h1></div>
         <div id="desktop">
 
             <div id="startmenu">
                 <div id="starttitle">Welcome, Boyne.</div>
                 <div id="startprogramlist">
-
+                    <div id="startsearch">
+                        <input type="text" id="startsearchinput">
+                    </div>
                 </div>
                 <div id="startpowermenu">
                     <div id="startpoweroff">Shut Down</div>
@@ -20,13 +23,6 @@
             <div id="taskbar">
                 <div id="start-wrapper">
                 <img id="start" src="assets/logo.png" draggable="false">
-                </div>
-
-                <div id="search">
-                    <div id="search-img-wrapper">
-                    <img src="assets/search.svg" draggable="false" class="invert">
-                    </div>
-                    <div id="search-text">Search</div>
                 </div>
 
                 <div id="taskbar-apps"></div>

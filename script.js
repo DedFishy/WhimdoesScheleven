@@ -15,6 +15,7 @@ startButton.onclick = function(event) {
 document.body.onclick = function(event) {
     if (!event.target.id.toString().startsWith("start")) {
         startMenu.classList.remove("startmenu-visible");
+        showingStartMenu = false;
     }
 }
 
