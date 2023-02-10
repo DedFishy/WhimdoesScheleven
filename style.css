@@ -172,15 +172,24 @@ body, html, #desktop {
 }
 #startsearch input {
     border: none;
-    border-bottom: 2px solid white;
-    border-radius: 2px;
-    box-shadow: 0 0 2px 2px white;
+    border: 2px solid #313131;
+    background-color: #141414;
+    border-bottom: 4px solid white;
+    border-radius: 4px;
     margin: 8px;
-    height: 60%;
+    height: 47%;
     outline: none;
     transition: 0.2s;
-    background: none;
+    color: #313131;
+    
+}
+
+#startsearch input:focus {
+    background-color: #272727;
+    outline: none;
+    transition: 0.2s;
     color: white;
+    
 }
 
 /*
