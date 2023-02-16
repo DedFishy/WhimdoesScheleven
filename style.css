@@ -27,7 +27,7 @@ body, html, #desktop {
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.01);
   }
   
   /* Handle */

@@ -19,6 +19,10 @@ document.body.onclick = function(event) {
     }
 }
 
+document.getElementById("startpoweroff").onclick = function(event) {
+    document.getElementById("overlay").style.display = "block";
+}
+
 setInterval(function(){
     var d = new Date();
 
